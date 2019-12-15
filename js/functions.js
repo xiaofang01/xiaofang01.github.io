@@ -18,8 +18,9 @@ $(function () {
 	
 	$("#content").css("width", $loveHeart.width() + $("#code").width());
 	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
-	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
+	// $("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
 	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));
+	$("#words").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2+26, 10));
 
     // renderLoop
     setInterval(function () {
@@ -124,7 +125,8 @@ function showMessages() {
 function adjustWordsPosition() {
 	$('#words').css("position", "absolute");
 	$('#words').css("top", $("#garden").position().top + 195);
-	$('#words').css("left", $("#garden").position().left + 70);
+	// $('#words').css("left", $("#garden").position().left + 70);
+	$('#words').css("left", 20);
 }
 
 function adjustCodePosition() {
